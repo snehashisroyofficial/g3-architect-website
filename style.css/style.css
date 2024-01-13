@@ -115,11 +115,55 @@ main {
   font-size: 1rem;
 }
 
+/* Featured Section style */
+
+.features {
+  display: flex;
+  margin: 130px 0;
+  gap: 146px;
+}
+.features p {
+  margin-bottom: 30px;
+}
+
+.features .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.card-featured {
+  padding: 30px 33px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 30px grey;
+}
+
+.ten-years-badge {
+  border-radius: 10px;
+  padding: 20px 0px;
+  background-color: #ff900e;
+  color: white;
+  text-align: center;
+  width: 342px;
+  position: relative;
+  bottom: 100px;
+  right: 40px;
+}
+.ten-years-badge h3 {
+  margin: 0px;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.ten-years-badge p {
+  margin: 0px;
+}
+
 /* facts section  */
 
 .facts-card-container {
   display: flex;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 .card {
@@ -146,8 +190,10 @@ main {
   margin-bottom: 5px;
 }
 
+/* sponsors styles */
+
 .sponsors {
-  margin-top: 80px;
+  margin: 160px 0px 130px 0px;
   text-align: center;
 }
 
@@ -166,6 +212,15 @@ main {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* footer style */
+
+.footer {
+  padding: 39px 410px;
+  background-color: #fff4e7;
+  color: #131313;
+  text-align: center;
+}
 /* responsive media query */
 
 /* mobile devices */
@@ -174,8 +229,14 @@ main {
     padding: 20px;
   }
 
-  nav {
+  nav,
+  .features,
+  .facts-card-container,
+  .teams-container,
+  .sponsors-image-container {
     flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .teams-container {
@@ -183,8 +244,6 @@ main {
   }
   .facts-card-container {
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .teams-img {
@@ -199,8 +258,16 @@ main {
     padding: 0 20px;
   }
   .sponsors-image-container {
-    flex-direction: column;
     gap: 40px;
+  }
+
+  .featured-img img {
+    width: 100%;
+  }
+
+  .ten-years-badge {
+    position: static;
+    max-width: 100%;
   }
 }
 /* tablet and medium device */
