@@ -313,4 +313,24 @@ main {
     flex-direction: column;
     gap: 40px;
   }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .featured-img img {
+    width: 100%;
+  }
+
+  .ten-years-badge {
+    position: static;
+    width: 100%;
+  }
+
+  .footer {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }
