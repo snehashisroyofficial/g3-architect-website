@@ -15,6 +15,16 @@
   cursor: pointer;
 }
 
+.text-grey {
+  color: #727272;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
 /* header styles */
 
 header {
@@ -26,11 +36,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.nav-title {
-  font-size: 2.8rem;
-  font-weight: 700;
 }
 
 nav ul {
@@ -62,10 +67,8 @@ nav li a {
 }
 
 .banner-description {
-  color: #171717;
   text-align: center;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 .banner-image {
@@ -108,11 +111,40 @@ main {
 }
 
 .teams-description {
-  color: #727272;
   font-size: 1rem;
-  font-weight: 400;
 }
 
+/* facts section  */
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ff900e;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-stats {
+  font-size: 3.2rem;
+  color: #424242;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #727272;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /* responsive media query */
 
 /* mobile devices */
