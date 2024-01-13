@@ -6,11 +6,12 @@
 
 .btn-primary {
   font-size: 1.2rem;
-  padding: 21px 25px;
+  padding: 20px 25px;
   background-color: #ff900e;
   color: white;
   border-style: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* header styles */
@@ -64,4 +65,30 @@ nav li a {
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.banner-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* responsive media query */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* tablet and medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
